@@ -16,6 +16,6 @@ public class Bootstrap implements SparkApplication {
     }
 
     private static void initRoutes() {
-        get("/", (req, res) -> "Hello, world!");
+        get("/", (req, res) -> "Hello, world");
     }
 }
