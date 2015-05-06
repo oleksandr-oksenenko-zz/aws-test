@@ -2,4 +2,4 @@ version: 0.0
 os: linux
 files:
   - source: target/*.war
-  - destination: /usr/share/tomcat/webapp/ROOT.war
+  - destination: /usr/share/tomcat8/webapp/ROOT.war
