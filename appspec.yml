@@ -1,5 +1,5 @@
 version: 0.0
 os: linux
 files:
-  - source: target/aws-test-1.0-SNAPSHOT.war
+  - source: target/*.war
     destination: /usr/share/tomcat8/webapps/
