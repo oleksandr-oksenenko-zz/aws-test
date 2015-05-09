@@ -2,4 +2,9 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /usr/share/tomcat8/webapps
+    destination: /tmp/aws-test
+hooks:
+  BeforeInstall:
+    - location: install.sh
+      timeout: 300
+      runas: root
