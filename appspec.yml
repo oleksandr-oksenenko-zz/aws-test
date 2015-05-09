@@ -1,5 +1,5 @@
 version: 0.0
 os: linux
 files:
-  - source: /
-    destination: /usr/share/tomcat8/webapp
+  - source: *.pom
+    destination: /usr/share/tomcat8/webapps/
