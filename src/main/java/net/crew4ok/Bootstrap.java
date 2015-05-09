@@ -40,6 +40,7 @@ public class Bootstrap implements SparkApplication {
                     conn.close();
                 }
             }
+            return "db doesn't work!";
         });
     }
 
