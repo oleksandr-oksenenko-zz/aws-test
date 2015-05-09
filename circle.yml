@@ -1,3 +1,10 @@
 machine:
-    java:
-        version: oraclejdk8
+  java:
+    version: oraclejdk8
+
+deployment:
+  staging:
+    branch: master
+    codedeploy:
+      aws-test:
+        deployment_group: my-deployment-group
