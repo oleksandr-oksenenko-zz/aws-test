@@ -55,8 +55,32 @@
                     </resources>
                     <outputDirectory>${project.basedir}/target</outputDirectory>
                 </configuration>
-
             </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <version>1.8</version>
+
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                        <phase>package</phase>
+                    </execution>
+                </executions>
+
+                <configuration>
+                    <target>
+                        <move file="${project.build.directory}/${project.build.finalName}.war"
+                              tofile="${project.build.directory}/deploy/ROOT.war"/>
+                        <move file="${project.basedir}/appspec.yml"
+                              tofile="${project.build.directory}/deploy/appspec.yml"/>
+                    </target>
+                </configuration>
+            </plugin>
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>

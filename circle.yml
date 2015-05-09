@@ -6,5 +6,6 @@ deployment:
   staging:
     branch: master
     codedeploy:
-      aws-test:
+      aws-test:1
+        application_root: /target/deploy/
         deployment_group: aws-test
