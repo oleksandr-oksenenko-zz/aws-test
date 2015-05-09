@@ -1,5 +1,10 @@
 version: 0.0
 os: linux
 files:
-  - source: target/*.war
-    destination: /usr/share/tomcat8/webapps/
+  - source: /
+    destination: /usr/share/tomcat8/webapps
+hooks:
+  BeforeInstall:
+    - location: install.sh
+      timeout: 300
+      runas: root

@@ -49,6 +49,7 @@
                             <directory>${project.basedir}</directory>
                             <includes>
                                 <include>appspec.yml</include>
+                                <include>install.sh</include>
                             </includes>
                         </resource>
                     </resources>

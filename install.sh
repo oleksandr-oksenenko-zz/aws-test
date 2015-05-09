@@ -1,0 +1,1 @@
+mv aws-test-*.war ROOT.war
