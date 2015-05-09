@@ -3,8 +3,3 @@ os: linux
 files:
   - source: /
     destination: /usr/share/tomcat8/webapps
-hooks:
-  BeforeInstall:
-    - location: install.sh
-      timeout: 300
-      runas: root
